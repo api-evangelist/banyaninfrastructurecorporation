@@ -1,23 +1,65 @@
 aid: banyaninfrastructurecorporation
+
 name: Banyaninfrastructurecorporation
-description: 'Banyaninfrastructurecorporation is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/images/SJAtGkO47mbMzfaasv6YXe4auk.png
+
+description: 'Banyaninfrastructurecorporation provides project finance software for infrastructure funds, developers, and green banks. Their platform unifies origination, portfolio management, and compliance reporting, enabling teams to close deals faster, manage risk, and maintain audit‑ready records. The solution replaces fragmented spreadsheets and email threads with a centralized data layer, supporting owners, operators, and financiers in the renewable energy sector.'
+
 url: https://raw.githubusercontent.com/api-evangelist/banyaninfrastructurecorporation/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
+- Finance
+- Infrastructure
+- Renewable Energy
+- SaaS
+- Project Management
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/banyaninfrastructurecorporation-hosts.yml
+- type: PrivacyPolicy
+  url: https://banyaninfrastructure.com/privacy-policy
+- type: Newsroom
+  url: https://banyaninfrastructure.com/news
+- type: DomainSecurity
+  url: security/banyaninfrastructurecorporation-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/banyaninfrastructurecorporation
+  url: https://banyaninfrastructure.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract was found at the API host.
+  evidence:
+    - url: https://api.banyaninfrastructure.com/openapi.json
+      status: 000
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
